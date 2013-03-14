@@ -126,6 +126,7 @@ def create_user():
 def syncdb():
     with cd(env.project_root):
         run("%(virtualenv_dir)s/bin/python manage.py syncdb --settings=MY_PROJECT.settings.prod --noinput" % env)
+        run("%(virtualenv_dir)s/bin/python manage.py migrate --noinput  --settings=MY_PROJECT.settings.prod" % env)
 
 
 @roles('server')
