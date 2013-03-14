@@ -134,3 +134,6 @@ use_env() {
     fi
   fi
 }
+
+# Elixir
+echo "export PATH=$PATH:$HOME/dev/bin/elixir/bin" >> $HOME/.bashrc
