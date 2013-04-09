@@ -1,5 +1,7 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"draw_white_space": "all",
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -8,6 +10,5 @@
 	"shift_tab_unindent": true,
 	"translate_tabs_to_spaces": true,
 	"word_wrap": "true",
-	"wrap_width": 110,
-	"draw_white_space": "all"
+	"wrap_width": 80
 }
