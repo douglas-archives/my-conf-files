@@ -4,11 +4,11 @@ import sys
 import time
 import xmlrpclib
 from fabric.api import cd, env, roles, run, local
-from fabric.contrib.files import exists
+from fabric.contrib.files import exists, upload_template
 
 
 env.root = os.path.dirname(os.path.abspath(__file__))
-env.repo = 'git@bitbucket.org:MY_USER/MY_PROJECT.git' # where is your repo?
+env.repo = 'git@bitbucket.org:MY_USER/MY_PROJECT.git'  # where is your repo?
 env.project = 'MY_PROJECT'
 env.project_root = '/home/MY_PROJECT/webapps/%(project)s' % env
 env.app_root = os.path.join(env.project_root, 'project')
@@ -120,6 +120,13 @@ def restart_gunicorn():
 def create_user():
     with cd(env.project_root):
         run("%(virtualenv_dir)s/bin/python manage.py createsuperuser --settings=MY_PROJECT.settings.prod" % env)
+
+
+@roles('server')
+def example_upload_something():
+    upload_template('somefile.sh', '%(project_root)s' % env)
+    # do something with the file (on the server)
+    run("chmod +x %(project_root)s/somefile.sh" % env)
 
 
 @roles('server')
