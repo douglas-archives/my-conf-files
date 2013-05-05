@@ -1,10 +1,24 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"draw_white_space": "all",
+	"fade_fold_buttons": false,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"R",
+		"Lisp",
+		"Ruby",
+		"Matlab",
+		"Graphviz",
+		"Groovy",
+		"C#",
+		"ActionScript",
+		"Scala",
+		"ASP",
+		"Rails",
+		"Clojure",
+		"D"
 	],
 	"overlay_scroll_bars": "enabled",
 	"shift_tab_unindent": true,
