@@ -56,7 +56,8 @@ def _webfaction_create_app():
 
 @roles('server')
 def _install_pip():
-    run("easy_install pip")
+    run('mkdir -p ~/lib/python2.7')
+    run("easy_install-2.7 pip")
 
 
 @roles('server')
