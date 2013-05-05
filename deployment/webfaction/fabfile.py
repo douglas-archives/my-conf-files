@@ -88,7 +88,7 @@ def pip_install():
 @roles('server')
 def collect_static_files():
     with cd(env.project_root):
-        run("%(virtualenv_dir)s/bin/python manage.py collectstatic -v 0 --noinput  --settings=MY_PROJECT.settings.prod" % env)
+        run("%(virtualenv_dir)s/bin/python manage.py collectstatic -v 0 --noinput  --settings=MY_PROJECT.settings.production" % env)
 
 
 @roles('server')
@@ -100,7 +100,7 @@ def start_migration():
 @roles('server')
 def start_gunicorn():
     with cd(env.project_root):
-        run('./start_gunicorn_prod.py')
+        run('./start_gunicorn.py')
 
 
 @roles('server')
@@ -120,7 +120,7 @@ def restart_gunicorn():
 @roles('server')
 def create_user():
     with cd(env.project_root):
-        run("%(virtualenv_dir)s/bin/python manage.py createsuperuser --settings=MY_PROJECT.settings.prod" % env)
+        run("%(virtualenv_dir)s/bin/python manage.py createsuperuser --settings=MY_PROJECT.settings.production" % env)
 
 
 @roles('server')
@@ -133,8 +133,8 @@ def example_upload_something():
 @roles('server')
 def syncdb():
     with cd(env.project_root):
-        run("%(virtualenv_dir)s/bin/python manage.py syncdb --settings=MY_PROJECT.settings.prod --noinput" % env)
-        run("%(virtualenv_dir)s/bin/python manage.py migrate --noinput  --settings=MY_PROJECT.settings.prod" % env)
+        run("%(virtualenv_dir)s/bin/python manage.py syncdb --settings=MY_PROJECT.settings.production --noinput" % env)
+        run("%(virtualenv_dir)s/bin/python manage.py migrate --noinput  --settings=MY_PROJECT.settings.production" % env)
 
 
 @roles('server')
