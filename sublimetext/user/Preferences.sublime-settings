@@ -1,28 +1,39 @@
 {
 	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"draw_white_space": "all",
-	"fade_fold_buttons": false,
+	"font_face": "Ubuntu Mono",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"R",
-		"Lisp",
-		"Ruby",
-		"Matlab",
-		"Graphviz",
-		"Groovy",
-		"C#",
-		"ActionScript",
-		"Scala",
-		"ASP",
 		"Rails",
 		"Clojure",
-		"D"
+		"Ruby",
+		"Lisp",
+		"ActionScript",
+		"R",
+		"ASP",
+		"Vintage",
+		"Groovy",
+		"Graphviz",
+		"Matlab",
+		"D",
+		"C#",
+		"Scala"
 	],
 	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		72,
+		79
+	],
 	"shift_tab_unindent": true,
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "true",
-	"wrap_width": 80
+	"find_selected_text": true
 }

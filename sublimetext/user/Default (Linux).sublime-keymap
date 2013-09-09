@@ -1,6 +1,4 @@
 [
     { "keys": ["ctrl+shift+b"], "command": "toggle_side_bar" },
-    { "keys": ["ctrl+shift+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-    { "keys": ["ctrl+alt+n"], "command": "advanced_new_file"},
-    { "keys": ["ctrl+shift+alt+n"], "command": "advanced_new_file", "args": {"is_python": true}}
+    { "keys": ["ctrl+shift+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} }
 ]
