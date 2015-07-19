@@ -1,31 +1,37 @@
 {
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Material-Theme (SL).tmTheme",
+	"draw_minimap_border": true,
 	"draw_white_space": "all",
 	"find_selected_text": true,
-	"font_face": "SourceCode Pro",
+	"font_face": "Fira Code",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
+		"no_round"
 	],
 	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Rails",
-		"Clojure",
-		"Ruby",
-		"Lisp",
-		"ActionScript",
-		"R",
-		"ASP",
 		"Vintage",
-		"Groovy",
-		"Graphviz",
-		"Matlab",
-		"D",
 		"C#",
-		"Scala"
+		"Graphviz",
+		"Clojure",
+		"Lisp",
+		"Rails",
+		"Matlab",
+		"R",
+		"ActionScript",
+		"Ruby",
+		"ASP",
+		"Scala",
+		"Groovy",
+		"D"
 	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -34,5 +40,6 @@
 	],
 	"shift_tab_unindent": true,
 	"translate_tabs_to_spaces": true,
-	"word_wrap": "true"
+	"word_wrap": "true",
+	"theme": "Material-Theme.sublime-theme",
 }
