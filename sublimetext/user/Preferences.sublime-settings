@@ -1,7 +1,8 @@
 {
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/Material-Theme (SL).tmTheme",
+	"theme": "Material-Theme.sublime-theme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
 	"find_selected_text": true,
@@ -9,29 +10,31 @@
 	"font_options":
 	[
 		"subpixel_antialias",
-		"no_round"
+		"no_round",
+		"gray_antialias"
 	],
 	"font_size": 12,
-	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
+		"ActionScript",
+		"ASP",
 		"C#",
-		"Graphviz",
 		"Clojure",
+		"D",
+		"Graphviz",
+		"Groovy",
 		"Lisp",
-		"Rails",
 		"Matlab",
 		"R",
-		"ActionScript",
+		"Rails",
 		"Ruby",
-		"ASP",
 		"Scala",
-		"Groovy",
-		"D"
+		"Vintage"
 	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -40,6 +43,5 @@
 	],
 	"shift_tab_unindent": true,
 	"translate_tabs_to_spaces": true,
-	"word_wrap": "true",
-	"theme": "Material-Theme.sublime-theme",
+	"word_wrap": "true"
 }
